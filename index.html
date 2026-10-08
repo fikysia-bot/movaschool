@@ -1,0 +1,424 @@
+<!doctype html>
+<!-- Колірний варіант: bordo (інші в styles.css: emerald, sapphire, gold, sky, green, blush, sun) -->
+<html lang="uk" data-theme="bordo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MOVA School — онлайн-школа української мови для дітей у всьому світі.">
+  <title>MOVA School — онлайн-школа української мови для дітей</title>
+  <!-- Прев'ю посилання у Viber, Telegram, Facebook, WhatsApp -->
+  <link rel="canonical" href="https://movaschool.academy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOVA School">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:url" content="https://movaschool.academy/">
+  <meta property="og:title" content="MOVA School — онлайн-школа української мови для дітей">
+  <meta property="og:description" content="Українська мова для дітей 5–18 років у всьому світі. Онлайн, у групах та індивідуально. Перший урок — безкоштовно.">
+  <meta property="og:image" content="https://movaschool.academy/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Дівчинка біжить ріпаковим полем — MOVA School">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="star.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Marck+Script&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Зірка з логотипа: використовується в шапці, футері й як запасний варіант для 3D -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="emblem" viewBox="-270 -270 540 540">
+      <g fill="currentColor">
+        <path d="M14 0L130 62L262 0L130-62Z"/><path d="M14 0L130 62L262 0L130-62Z" transform="rotate(90)"/>
+        <path d="M14 0L130 62L262 0L130-62Z" transform="rotate(180)"/><path d="M14 0L130 62L262 0L130-62Z" transform="rotate(270)"/>
+        <path d="M14 0L122 46L217 0L122-46Z" transform="rotate(45)"/><path d="M14 0L122 46L217 0L122-46Z" transform="rotate(135)"/>
+        <path d="M14 0L122 46L217 0L122-46Z" transform="rotate(225)"/><path d="M14 0L122 46L217 0L122-46Z" transform="rotate(315)"/>
+      </g>
+    </symbol>
+    <!-- Дитячі малюнки -->
+    <symbol id="sparkle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></symbol>
+    <symbol id="heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21C5 16 1 12 1 7.5A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 11 2.5C23 12 19 16 12 21z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top" aria-label="MOVA School — на головну">
+        <svg class="logo-mark"><use href="#emblem"/></svg>
+        <span class="logo-word"><b>mova</b><small>SCHOOL</small></span>
+      </a>
+      <nav id="menu" aria-label="Головна навігація">
+        <a href="#about">Про школу</a>
+        <a href="#courses">Програми</a>
+        <a href="#founders">Засновниці</a>
+        <a href="#faq">Питання</a>
+        <a href="#trial">Контакти</a>
+      </nav>
+      <a class="button button-small header-cta" href="#trial">Безкоштовний урок</a>
+      <button class="burger" aria-label="Меню" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <!-- Фон першого екрана: діти в полі, кадри м'яко змінюються -->
+      <div class="hero-photos" aria-label="Фото учнів MOVA School" role="img">
+        <img src="photos/hero-1-girl-arms.jpg" alt="" style="--i:0" fetchpriority="high">
+        <img data-src="photos/hero-2-girl-run.jpg" alt="" style="--i:1">
+        <img data-src="photos/hero-3-boy-point.jpg" alt="" style="--i:2">
+        <img data-src="photos/hero-4-boy-run.jpg" alt="" style="--i:3">
+        <img data-src="photos/hero-5-two-flowers.jpg" alt="" style="--i:4">
+        <img data-src="photos/hero-6-girl-side.jpg" alt="" style="--i:5">
+        <img data-src="photos/hero-7-girl-point.jpg" alt="" style="--i:6">
+        <img data-src="photos/hero-8-hug.jpg" alt="" style="--i:7">
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="label reveal">Українська мова · культура · дитинство</p>
+          <h1 class="reveal">Онлайн-школа української мови <em>для <span class="scribble">дітей<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13C40 4 78 18 118 9S182 8 197 6"/></svg></span> у&nbsp;всьому світі</em></h1>
+          <p class="lead reveal">Місце, де діти вивчають українську мову, знаходять друзів і зростають із любов’ю до свого коріння.</p>
+          <div class="hero-actions reveal">
+            <a class="button" href="#trial">Безкоштовний пробний урок</a>
+            <a class="text-link" href="#courses">Переглянути програми <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="mini-note reveal"><span class="free-pill">Перший урок — безкоштовно</span> Онлайн · у групах та індивідуально · з теплом і підтримкою</p>
+          <div class="kids-row reveal">
+            <span class="avatars" aria-hidden="true">
+              <img src="photos/girl-grass.jpg" alt="" style="object-position:50% 30%">
+              <img src="photos/boy-bunny.jpg" alt="" style="object-position:50% 25%">
+              <img src="photos/girl-dog.jpg" alt="" style="object-position:30% 45%">
+              <img src="photos/online-lesson.jpg" alt="" style="object-position:30% 35%">
+            </span>
+            <p>Діти з різних країн уже говорять українською</p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+
+          <!-- Літачок і зірочки навколо емблеми -->
+          <div class="kid-doodles" aria-hidden="true">
+            <svg class="plane" viewBox="0 0 200 120">
+              <path class="trail" d="M4 112C40 70 70 118 104 84S140 50 150 52"/>
+              <path class="wing" d="M146 54L196 18L170 74L160 58Z"/>
+              <path class="wing" d="M160 58L196 18"/>
+            </svg>
+            <svg class="spark s1"><use href="#sparkle"/></svg>
+            <svg class="spark s2"><use href="#sparkle"/></svg>
+            <svg class="spark s3"><use href="#sparkle"/></svg>
+            <svg class="spark s4"><use href="#heart"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="container feature-strip">
+        <article class="reveal"><span>01</span><h3>Жива українська мова</h3><p>без нудного заучування</p></article>
+        <article class="reveal"><span>02</span><h3>Невеликі групи</h3><p>де кожну дитину бачать і чують</p></article>
+        <article class="reveal"><span>03</span><h3>Учні з різних країн</h3><p>яких об’єднує українська</p></article>
+        <article class="reveal"><span>04</span><h3>Інтерактивні уроки</h3><p>що захоплюють і надихають</p></article>
+      </div>
+    </section>
+
+    <div class="ornament" aria-hidden="true"></div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="label reveal"><span class="num">01</span> Про MOVA School</p>
+          <h2 class="reveal">Навчаємо.<br><em>Надихаємо.</em><br>Об’єднуємо.</h2>
+          <svg class="pencil-doodle reveal" viewBox="0 0 260 120" aria-hidden="true">
+            <path class="squiggle" d="M6 92c18-30 34 18 52-8s30-36 46-6 30 22 46-10 28-24 40-6"/>
+            <g transform="rotate(-38 214 50)">
+              <rect class="p-body" x="186" y="40" width="64" height="20" rx="3"/>
+              <rect class="p-end" x="244" y="40" width="12" height="20" rx="3"/>
+              <path class="p-wood" d="M186 40L166 50L186 60Z"/>
+              <path class="p-tip" d="M172 47L166 50L172 53Z"/>
+            </g>
+            <use class="p-heart" href="#heart" x="8" y="20" width="24" height="24"/>
+            <use class="p-spark" href="#sparkle" x="120" y="8" width="18" height="18"/>
+          </svg>
+        </div>
+        <div class="prose">
+          <p class="large reveal">MOVA — це теплий онлайн-простір для дітей, які живуть у різних куточках світу, але хочуть говорити, читати й думати українською.</p>
+          <p class="reveal">Ми поєднуємо сучасні методики, творчі завдання, живе спілкування та українську культуру. Тут дитина не боїться помилятися, відчуває підтримку й поступово відкриває свою українську.</p>
+          <blockquote class="reveal">«Мова — це не лише слова. Це зв’язок із родиною, культурою та собою».</blockquote>
+        </div>
+      </div>
+      <div class="container about-photos reveal">
+        <figure class="polaroid p1"><img src="photos/girl-grass.jpg" alt="Усміхнена дівчинка сидить на траві" loading="lazy"><figcaption>усмішка</figcaption></figure>
+        <figure class="polaroid p2"><img src="photos/wheat-sky.jpg" alt="Хлопчик підкидає іграшку над пшеничним полем" loading="lazy"><figcaption>мрії вгору</figcaption></figure>
+        <figure class="polaroid p3"><img src="photos/poppies.jpg" alt="Дві дівчинки біжать маковим полем" loading="lazy"><figcaption>маки і сміх</figcaption></figure>
+        <figure class="polaroid p4"><img src="photos/girl-dog.jpg" alt="Дівчинка з собакою, чорно-біле фото" loading="lazy"><figcaption>найкращий друг</figcaption></figure>
+        <figure class="polaroid p5"><img src="photos/boy-heart-sign.jpg" alt="Хлопчик сидить на траві і кумедно кривляється з написом «I love you»" loading="lazy" style="object-position:50% 40%"><figcaption>з любов’ю</figcaption></figure>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Українська мова</span><span>Мандрівка Україною</span><span>Анімаційна майстерня</span><span>Логопедія</span><span>Вокальна студія</span>
+        <span>Українська мова</span><span>Мандрівка Україною</span><span>Анімаційна майстерня</span><span>Логопедія</span><span>Вокальна студія</span>
+      </div>
+    </div>
+
+    <!-- COURSES -->
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="label reveal"><span class="num">02</span> Наші програми</p><h2 class="reveal">Програми, створені <em>з любов’ю</em></h2></div>
+          <p class="reveal">Від перших українських слів до впевненої розмови, творчості та пізнання культури.</p>
+        </div>
+
+        <div class="course-list">
+          <article class="course reveal">
+            <div class="c-side"><span class="c-num">01</span>
+              <svg class="c-art" viewBox="0 0 64 64" aria-hidden="true"><path class="fill" d="M6 16c9-3 18-2 26 4 8-6 17-7 26-4v32c-9-3-18-2-26 4-8-6-17-7-26-4z"/><path d="M6 16c9-3 18-2 26 4 8-6 17-7 26-4v32c-9-3-18-2-26 4-8-6-17-7-26-4zM32 20v32"/><text x="11" y="41">А</text><text x="38" y="41">а</text><use class="tiny" href="#sparkle" x="50" y="2" width="12" height="12"/></svg>
+            </div>
+            <div class="c-main">
+              <h3>Українська мова</h3>
+              <p>Групові та індивідуальні уроки для різних рівнів.</p>
+              <ol class="levels"><li>Перші слова</li><li>Говорю українською</li><li>Читаю і пишу</li><li>Вільна українська</li></ol>
+            </div>
+            <span class="c-tag">5–18 років</span>
+            <a class="c-link" href="#trial" aria-label="Записатися: Українська мова">→</a>
+            <img class="c-photo" src="photos/boy-desk.jpg" alt="Хлопчик сидить за партою на уроці" loading="lazy" style="object-position:30% 45%">
+          </article>
+          <article class="course reveal">
+            <div class="c-side"><span class="c-num">02</span>
+              <svg class="c-art" viewBox="0 0 64 64" aria-hidden="true"><path class="fill" d="M6 16l15-6 22 6 15-6v40l-15 6-22-6-15 6z"/><path d="M6 16l15-6 22 6 15-6v40l-15 6-22-6-15 6zM21 10v40M43 16v40"/><path class="dash" d="M12 44c6-9 13 1 19-7s9-11 15-9"/><path class="dot" d="M49 9c-4.5 0-8 3.3-8 7.6C41 22 49 29 49 29s8-7 8-12.4C57 12.3 53.5 9 49 9z"/><circle cx="49" cy="16.5" r="2.6" fill="#fff" stroke="none"/></svg>
+            </div>
+            <div class="c-main"><h3>Мандрівка Україною</h3><p>Курс культури, історії та традицій для допитливих дітей.</p></div>
+            <span class="c-tag">8–18 років</span>
+            <a class="c-link" href="#trial" aria-label="Дізнатися більше: Мандрівка Україною">→</a>
+            <img class="c-photo" src="photos/classroom.jpg" alt="Діти у вишиванках на святковому уроці" loading="lazy" style="object-position:50% 45%">
+          </article>
+          <article class="course reveal">
+            <div class="c-side"><span class="c-num">03</span>
+              <svg class="c-art" viewBox="0 0 64 64" aria-hidden="true"><rect class="fill" x="7" y="26" width="50" height="30" rx="5"/><rect x="7" y="26" width="50" height="30" rx="5"/><path class="fill2" d="M7 26L54 13l2.5 8.5L9.5 34.5z"/><path d="M7 26L54 13l2.5 8.5M19 22.7l5.5 8.4M31 19.4l5.5 8.4M43 16.1l5.5 8.4"/><path class="star" d="M32 34.5l3 6.2 6.8 1-4.9 4.7 1.2 6.7-6.1-3.2-6.1 3.2 1.2-6.7-4.9-4.7 6.8-1z"/></svg>
+            </div>
+            <div class="c-main"><h3>Анімаційна майстерня</h3><p>Створюємо власні історії, героїв та анімаційні проєкти.</p></div>
+            <span class="c-tag">Творчий курс</span>
+            <a class="c-link" href="#trial" aria-label="Дізнатися більше: Анімаційна майстерня">→</a>
+            <img class="c-photo" src="photos/boy-heart-stand.jpg" alt="Хлопчик тримає напис «I love you» із сердечком" loading="lazy" style="object-position:50% 30%">
+          </article>
+          <article class="course reveal">
+            <div class="c-side"><span class="c-num">04</span>
+              <svg class="c-art" viewBox="0 0 64 64" aria-hidden="true"><path d="M46 24h6a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6h-2v8l-9-8h-9"/><path class="fill" d="M10 10h32a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6H24l-10 9v-9h-4a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z"/><path d="M10 10h32a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6H24l-10 9v-9h-4a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z"/><use class="dot" href="#heart" x="16" y="15" width="20" height="20"/></svg>
+            </div>
+            <div class="c-main"><h3>Логопедія для дітей</h3><p>Дбайлива підтримка мовлення з урахуванням потреб дитини.</p></div>
+            <span class="c-tag">Індивідуально</span>
+            <a class="c-link" href="#trial" aria-label="Дізнатися більше: Логопедія для дітей">→</a>
+            <img class="c-photo" src="photos/online-lesson.jpg" alt="Хлопчик усміхається вчительці на онлайн-занятті" loading="lazy" style="object-position:45% 50%">
+          </article>
+          <article class="course reveal">
+            <div class="c-side"><span class="c-num">05</span>
+              <svg class="c-art" viewBox="0 0 64 64" aria-hidden="true"><path d="M23 47V17l29-7v31M23 25l29-7"/><ellipse class="dot" cx="17" cy="47" rx="7.5" ry="5.8" transform="rotate(-20 17 47)"/><ellipse class="dot" cx="46" cy="41" rx="7.5" ry="5.8" transform="rotate(-20 46 41)"/><use class="tiny" href="#sparkle" x="2" y="6" width="13" height="13"/><use class="tiny" href="#sparkle" x="54" y="52" width="9" height="9"/></svg>
+            </div>
+            <div class="c-main"><h3>Вокальна студія MOVA</h3><p>Розкриваємо голос, впевненість і любов до української пісні.</p></div>
+            <span class="c-tag">Вокал</span>
+            <a class="c-link" href="#trial" aria-label="Дізнатися більше: Вокальна студія MOVA">→</a>
+            <img class="c-photo" src="photos/girls-vocal.jpg" alt="Дві дівчинки у вишиванках" loading="lazy" style="object-position:50% 35%">
+          </article>
+        </div>
+        <p class="center-note reveal">Не знаєте, який формат підійде? На знайомстві ми визначимо рівень та порадимо програму.</p>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section steps accent">
+      <div class="container">
+        <p class="label reveal"><span class="num">03</span> Як усе відбувається</p>
+        <h2 class="reveal">Три кроки до <em>першого уроку</em></h2>
+        <div class="step-grid">
+          <article class="reveal"><b>Крок 01</b><h3>Заявка</h3><p>Заповніть коротку форму та розкажіть нам про дитину.</p></article>
+          <article class="reveal"><b>Крок 02</b><h3>Знайомство</h3><p>Зустрічаємося онлайн на безкоштовному пробному уроці, визначаємо рівень і цілі навчання.</p></article>
+          <article class="reveal"><b>Крок 03</b><h3>Навчання</h3><p>Обираємо зручний формат і починаємо захопливу подорож.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section approach">
+      <div class="container two-col aligned">
+        <div class="approach-art reveal" aria-hidden="true">
+          <div class="frame photo-frame"><img src="photos/online-smile.jpg" alt="" loading="lazy" style="object-position:35% 50%"><p>маленькі кроки<br>до великої любові</p></div>
+        </div>
+        <div class="prose">
+          <p class="label reveal"><span class="num">04</span> Наш підхід</p>
+          <h2 class="reveal">Українська мова, яку <em>хочеться вивчати</em></h2>
+          <p class="large reveal">На уроках багато живого спілкування, інтерактивних завдань, творчості та культури.</p>
+          <p class="reveal">Ми враховуємо вік, рівень і темп кожної дитини, підтримуємо цікавість та допомагаємо впевнено користуватися українською у щоденному житті.</p>
+          <blockquote class="reveal">«Маленькі кроки сьогодні — впевнена українська завтра».</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament" aria-hidden="true"></div>
+
+    <!-- BILINGUAL -->
+    <section class="section bilingual" id="bilingual">
+      <div class="container">
+        <div class="bi-head">
+          <div>
+            <p class="label reveal"><span class="num">05</span> Для дітей-білінгвів</p>
+            <h2 class="reveal">Українська <em>поруч з іншими мовами</em></h2>
+            <p class="large bi-lead reveal">Наші учні щодня говорять англійською, німецькою, польською чи іншою мовою. Ми не змагаємося з нею, а додаємо українську.</p>
+          </div>
+          <div class="hello-cloud reveal" aria-hidden="true">
+            <span lang="en">Hello</span><span lang="de">Hallo</span><span lang="fr">Bonjour</span>
+            <b>Привіт!</b>
+            <span lang="pl">Cześć</span><span lang="es">Hola</span><span lang="it">Ciao</span>
+          </div>
+        </div>
+        <div class="bi-points">
+          <article class="reveal"><svg class="bi-mark" aria-hidden="true"><use href="#sparkle"/></svg><h3>Без тиску і порівнянь</h3><p>Змішувати слова з різних мов — природно для білінгва. Ми м’яко підказуємо українське слово, а не виправляємо дитину.</p></article>
+          <article class="reveal"><svg class="bi-mark" aria-hidden="true"><use href="#sparkle"/></svg><h3>З урахуванням іншої мови</h3><p>Пояснюємо звуки, літери й граматику так, щоб дитина, яка звикла до латиниці, не плутала алфавіти.</p></article>
+          <article class="reveal"><svg class="bi-mark" aria-hidden="true"><use href="#sparkle"/></svg><h3>Українська вдома</h3><p>Підказуємо батькам, як підтримувати мову щодня, навіть коли в родині говорять кількома мовами.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament" aria-hidden="true"></div>
+
+    <!-- FOUNDERS -->
+    <section class="section founders" id="founders">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="label reveal"><span class="num">06</span> Засновниці школи</p><h2 class="reveal">Люди, які створили <em>MOVA School</em></h2></div>
+          <p class="reveal">Дві мами й освітянки, об’єднані любов’ю до дітей та української культури.</p>
+        </div>
+        <div class="founder-grid">
+          <article class="reveal"><div class="portrait"><img src="anna.jpg" alt="Анна Пахольчук, співзасновниця MOVA School" loading="lazy"></div><div><h3>Анна Пахольчук</h3><p class="role">Співзасновниця MOVA School</p><p class="quote">«Я хочу, щоб українська для дітей була мовою радості, друзів і теплих родинних спогадів».</p></div></article>
+          <article class="reveal"><div class="portrait"><img src="yulia.jpg" alt="Юлія Тузова, співзасновниця MOVA School" loading="lazy"></div><div><h3>Юлія Тузова</h3><p class="role">Співзасновниця MOVA School</p><p class="quote">«Кожна дитина може полюбити навчання, коли її бачать, чують і підтримують».</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <p class="label reveal"><span class="num">07</span> Часті запитання</p>
+        <h2 class="reveal">Відповідаємо <em>коротко й чесно</em></h2>
+        <div class="faq-list">
+          <details class="reveal"><summary>Для якого віку підходять заняття?</summary><p>Ми працюємо з дітьми приблизно від 5 до 18 років і добираємо програму відповідно до віку та рівня.</p></details>
+          <details class="reveal"><summary>Чи можна навчатися, якщо дитина майже не говорить українською?</summary><p>Так. Багато наших учнів — білінгви: вдома, у школі чи з друзями вони говорять іншою мовою. Для них є програми для початківців, де дитина без поспіху починає розуміти українську, а потім і говорити нею.</p></details>          <details class="reveal"><summary>Є групові та індивідуальні уроки?</summary><p>Так, доступні обидва формати. Ми допоможемо обрати найкращий під час знайомства.</p></details>
+          <details class="reveal"><summary>Скільки коштує пробний урок?</summary><p>Пробний урок — безкоштовний. На ньому ми знайомимося з дитиною, визначаємо рівень і радимо програму.</p></details>
+          <details class="reveal"><summary>Як записатися на пробний урок?</summary><p>Заповніть форму нижче. Ми зв’яжемося з вами та узгодимо зручний час.</p></details>
+          <details class="reveal"><summary>Де проходять заняття?</summary><p>Усі заняття проходять онлайн, тому долучатися можна з будь-якої країни.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="ornament light" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <h2 class="reveal">Подаруйте дитині українську мову <em>на все життя</em></h2>
+        <div class="cta-side">
+          <span class="cta-free">Перший урок — безкоштовно</span>
+          <a class="button white" href="#trial">Записатися безкоштовно</a>
+        </div>
+      </div>
+      <div class="ornament light" aria-hidden="true"></div>
+    </section>
+
+    <!-- TRIAL FORM -->
+    <section class="section trial" id="trial">
+      <div class="container trial-grid">
+        <div>
+          <p class="label reveal"><span class="num">08</span> Пробний урок</p>
+          <h2 class="reveal">Познайомимося <em>ближче</em></h2>
+          <p class="free-big reveal">Пробний урок — <b>безкоштовно</b></p>
+          <p class="large reveal">Заповніть форму — ми зв’яжемося з вами, визначимо рівень дитини та підберемо зручний формат.</p>
+          <dl class="contacts reveal">
+            <div><dt>Email</dt><dd><a href="mailto:movaschool.academy@gmail.com">movaschool.academy@gmail.com</a></dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+19493030569">+1 (949) 303-0569</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://instagram.com/movaschool.academy">@movaschool.academy</a></dd></div>
+          </dl>
+        </div>
+        <form class="reveal" action="https://formsubmit.co/movaschool.academy@gmail.com" method="post">
+          <p class="label">Заявка на безкоштовний пробний урок</p>
+          <input type="hidden" name="_subject" value="Нова заявка — MOVA School">
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Після надсилання — наша сторінка подяки замість англійської сторінки FormSubmit -->
+          <input type="hidden" name="_next" value="https://movaschool.academy/thanks.html">
+          <input type="hidden" name="_template" value="table">
+          <!-- Пастка для спам-ботів: люди це поле не бачать і не заповнюють -->
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label>Ім’я та прізвище одного з батьків<input name="parent_name" required></label>
+          <div class="form-row"><label>Телефон<input type="tel" name="phone" required></label><label>Email<input type="email" name="email" required></label></div>
+          <div class="form-row"><label>Ім’я дитини<input name="child_name" required></label><label>Вік дитини<input type="number" min="3" max="18" name="child_age" required></label></div>
+          <label>Країна та місто<input name="location"></label>
+          <label>Оберіть курс<select name="course" required><option value="">Оберіть програму</option><option>Українська мова</option><option>Мандрівка Україною</option><option>Анімаційна майстерня</option><option>Логопедія для дітей</option><option>Вокальна студія MOVA</option></select></label>
+          <label>Коментар<textarea name="message" rows="3" placeholder="Розкажіть про цілі та побажання"></textarea></label>
+          <button class="button" type="submit">Записатися безкоштовно <span aria-hidden="true">→</span></button>
+          <small>Натискаючи кнопку, ви погоджуєтеся на обробку наданих даних для зв’язку щодо навчання. <a href="privacy.html">Політика конфіденційності</a></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <div class="ornament light" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#top" aria-label="MOVA School — на головну">
+          <svg class="logo-mark"><use href="#emblem"/></svg>
+          <span class="logo-word"><b>mova</b><small>SCHOOL</small></span>
+        </a>
+        <p class="footer-tag">Онлайн-школа української мови для дітей у всьому світі.</p>
+      </div>
+      <div><h3>Навігація</h3><a href="#about">Про школу</a><a href="#courses">Програми</a><a href="#founders">Засновниці</a><a href="#faq">Питання</a></div>
+      <div><h3>Контакти</h3><a href="mailto:movaschool.academy@gmail.com">movaschool.academy@gmail.com</a><a href="tel:+19493030569">+1 (949) 303-0569</a><a href="https://instagram.com/movaschool.academy">Instagram: @movaschool.academy</a></div>
+    </div>
+    <div class="container copyright"><span>© 2026 MOVA School · <a href="privacy.html">Політика конфіденційності</a></span><span>Українська мова об’єднує</span></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script>
+    // Фото першого екрана: перше вже є, решту підвантажуємо після відкриття сторінки
+    addEventListener('load', () => document.querySelectorAll('.hero-photos img[data-src]').forEach(i => { i.src = i.dataset.src; i.removeAttribute('data-src'); }));
+    // Плавне прокручування
+    if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const lenis = new Lenis({ duration: 1.2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+      const raf = time => { lenis.raf(time); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        lenis.scrollTo(a.getAttribute('href') === '#top' ? 0 : target, { offset: -70 });
+      }));
+    }
+
+    // Шапка: фон після прокручування, мобільне меню
+    const header = document.querySelector('.site-header');
+    const burger = document.querySelector('.burger');
+    const onScroll = () => header.classList.toggle('scrolled', scrollY > 40);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    burger.addEventListener('click', () => {
+      const open = header.classList.toggle('menu-open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      burger.setAttribute('aria-expanded', false);
+    }));
+
+    // Плавна поява блоків
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+
+
+    // Курси: фото рухається за курсором
+    document.querySelectorAll('.course').forEach(c => c.addEventListener('pointermove', e => {
+      const r = c.getBoundingClientRect();
+      c.style.setProperty('--mx', Math.min(r.width - 140, Math.max(140, e.clientX - r.left)) + 'px');
+    }));  </script>
+
+</body>
+</html>
