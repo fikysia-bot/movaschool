@@ -248,6 +248,8 @@ blockquote{margin:36px 0 0;padding:6px 0 6px 26px;border-left:3px solid var(--ac
   .course:hover .c-photo{opacity:1;transform:translate(-50%,-50%) rotate(-4deg) scale(1)}
 }
 @media (prefers-reduced-motion:reduce){.c-photo{transition:none}}
+/* на телефонах і планшетах (без мишки) фото біля програм не показуємо — там вони стояли б нерухомо */
+@media (hover:none),(pointer:coarse){.course .c-photo{display:none}}
 .polaroid:hover{transform:rotate(0) scale(1.02);z-index:2}
 
 
